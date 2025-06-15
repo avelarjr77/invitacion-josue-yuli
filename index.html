@@ -10,48 +10,97 @@
     <div class="invitation-container">
         <!-- SVG floral decorativo arriba -->
         <div class="floral-top">
-            <svg width="100" height="60" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 50 Q 50 10, 90 50" stroke="#e7bfa7" stroke-width="2" fill="none"/>
-                <ellipse cx="50" cy="25" rx="6" ry="12" fill="#f3e7e9" stroke="#b79b7e" stroke-width="1"/>
-                <circle cx="50" cy="25" r="2.5" fill="#a786df"/>
-            </svg>
+            
         </div>
         <header class="fade-in">
-            <h1>María & Juan</h1>
-            <p class="date">10 de Octubre de 2025</p>
-            <p class="location">Hacienda Las Flores, CDMX</p>
-        </header>
-        <section class="details slide-up">
-            <h2>¡Nos Casamos!</h2>
-            <p>Nos encantaría que nos acompañaras en este día tan especial.</p>
-            <div class="itinerary">
-                <h3>Itinerario</h3>
-                <ul>
-                    <li><span>16:00</span> Ceremonia</li>
-                    <li><span>17:00</span> Cóctel</li>
-                    <li><span>18:30</span> Recepción y Cena</li>
-                    <li><span>21:00</span> Baile</li>
-                </ul>
-            </div>
-            <div class="rsvp">
-                <h3>Confirma tu asistencia</h3>
-                <form id="rsvp-form">
-                    <input type="text" name="nombre" placeholder="Tu nombre" required>
-                    <input type="email" name="email" placeholder="Tu email" required>
-                    <button type="submit">Confirmar</button>
-                </form>
-                <p id="rsvp-msg"></p>
+            <h1 style="text-align: center;">
+                Yuli Cazún<br>
+                <span class="amp" style="display: block; font-size: 2em;">&</span>
+                Josué Díaz
+            </h1>
+            
+        </header><br>
+        <section>
+            <div style="text-align: center; margin-bottom: 1em;">
+                <audio id="wedding-audio" controls loop>
+                    <source src="sources/audio.weba" type="audio/webm">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
             </div>
         </section>
-        <footer>
-            <div class="floral-bottom">
-                <svg width="100" height="60" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 10 Q 50 50, 90 10" stroke="#e7bfa7" stroke-width="2" fill="none"/>
-                    <ellipse cx="50" cy="35" rx="6" ry="12" fill="#f3e7e9" stroke="#b79b7e" stroke-width="1"/>
-                    <circle cx="50" cy="35" r="2.5" fill="#a786df"/>
-                </svg>
+        <section class="countdown-section fade-in">
+            <h2 style="font-family: 'Cormorant Garamond', 'Times New Roman', serif; font-weight: 600;">FALTAN</h2>
+            <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet"><div id="countdown" style="display: flex; flex-direction: column; align-items: center;">
+                <table>
+                    <thead>
+                        <tr style="font-size: 16px; font-weight: normal;">
+                            <td id="days" style="padding: 0 5px; background: #870925; border-radius: 12px; font-weight: bold; font-size: 1.3em; min-width: 2.5em; text-align: center; color: #fff;">00</td>
+                            <td id="hours" style="padding: 0 5px; background: #870925; border-radius: 12px; font-weight: bold; font-size: 1.3em; min-width: 2.5em; text-align: center; color: #fff;">00</td>
+                            <td id="minutes" style="padding: 0 5px; background: #870925; border-radius: 12px; font-weight: bold; font-size: 1.3em; min-width: 2.5em; text-align: center; color: #fff;">00</td>
+                            <td id="seconds" style="padding: 0 5px; background: #870925; border-radius: 12px; font-weight: bold; font-size: 1.3em; min-width: 2.5em; text-align: center; color: #fff;">00</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th style="padding: 0 15px;">Días</th>
+                            <th style="padding: 0 15px;">Horas</th>
+                            <th style="padding: 0 15px;">Minutos</th>
+                            <th style="padding: 0 15px;">Segundos</th>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <p>Con amor, María & Juan</p>
+        </section>
+        <section style="text-align: center;">
+            <p>Nos encantaría que nos acompañaras en este día tan especial.</p>
+            <div class="wedding-date" style="display: flex; justify-content: center; align-items: center; gap: 0.5em; margin-bottom: 1em;">
+            <div style="font-size: 1.2em; letter-spacing: 2px; border-bottom: 2px solid #870925; border-top: 2px solid #870925; padding: 0.5em 0.6em; color: #870925;">
+                Domingo
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <span style="font-size: 2.5em; font-weight: bold; color: #870925;">17</span>
+            </div>
+            <div style="font-size: 1.2em; letter-spacing: 2px; border-bottom: 2px solid #870925; border-top: 2px solid #870925; padding: 0.5em 0.6em; color: #870925;">
+                Agosto
+            </div>                
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; margin-top: -0.5em;">
+            <div style="font-size: 1.2em; color: #870925;">
+               HORA: 9:30 AM
+            </div>
+            </div>
+        </section><br>
+        <section class="itinerary">
+            <div class="location fade-in">
+            <span style="font-size: 2em; vertical-align: middle; margin-right: 0.3em;" title="Iglesia">
+                <!-- Icono SVG de iglesia -->
+                <svg width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" style="vertical-align: middle;">
+                <path d="M12 2L15 5V7H17V9H19V22H5V9H7V7H9V5L12 2Z" stroke="#870925" stroke-width="1.5" fill="#f3e7e9"/>
+                <rect x="10" y="14" width="4" height="5" fill="#870925"/>
+                <rect x="7" y="11" width="2" height="3" fill="#e7bfa7"/>
+                <rect x="15" y="11" width="2" height="3" fill="#e7bfa7"/>
+                </svg>
+            </span>
+            <p><strong >Iglesia Salem A.D.</strong></p>
+            <p >Calle El Socorro, Barrio El Centro,<br>El Porvenir, Santa Ana</p>
+            <div style="margin-top: 1em;"></div>
+                <a href="https://maps.app.goo.gl/qnaAGR9CDKxUxi1T8" target="_blank" rel="noopener" class="btn-outline">
+                    Ver ubicación
+                </a>
+            </div>
+        </section>
+        <section>
+            <div style="text-align: center; margin-top: 1em;">
+            <a href="https://wa.me/503XXXXXXXX?text=Hola%2C%20quiero%20confirmar%20mi%20asistencia%20a%20la%20boda%20de%20Yuli%20y%20Josu%C3%A9." 
+                target="_blank" 
+                rel="noopener" 
+                style="display: inline-block; padding: 0.7em 1.5em; background: #870925; color: #fff; border-radius: 8px; font-size: 1.1em; font-weight: bold; text-decoration: none; box-shadow: 0 2px 8px rgba(135,9,37,0.15); transition: background 0.2s;">
+                 Confirmar asistencia 
+            </a>
+            </div>
+        </section>
+        <footer>            
+            <p>Con cariño, Yuli & Josué</p>
         </footer>
     </div>
     <script src="main.js"></script>
