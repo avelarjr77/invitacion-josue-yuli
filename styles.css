@@ -25,7 +25,7 @@ body::after {
 .invitation-container {
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-    border-radius: 24px;
+    /* border-radius: 24px; */
     padding: 40px 32px;
     max-width: 420px;
     width: 100%;
@@ -174,4 +174,23 @@ footer {
     .details h2 {
         font-size: 1.4rem;
     }
+}
+
+
+ .btn-outline {
+    display: inline-block;
+    padding: 0.7em 1.5em;
+    background: transparent;
+    color: #870925;
+    border: 2px solid #870925;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(135,9,37,0.15);
+    transition: background 0.2s, color 0.2s;
+}
+.btn-outline:hover,
+.btn-outline:active {
+    background: #870925;
+    color: #fff;
 }
